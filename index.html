@@ -1,0 +1,45 @@
+<!doctype html>
+  <head><title>INICIO</title></head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <h1><center>SISTEMA DE REGISTRO  Y CONSULTA DE DATOS CON JSON</center></h1>
+    <body>
+              <center>
+              <form id="student" action="write.php" method="POST">
+                  <fieldset>
+                  <legend>Alumno</legend>
+                  <label for="Matricula">Matrícula</Nombre>
+                  <input type="text" id="matricula" name="matricula" required><br><br>                  
+                  <label for="Nombre">Nombre</Nombre>
+                  <input type="text" id="name" name="nombre"required><br><br> 
+                  <label for="Apellido Paterno">Apellido Paterno</label>
+                  <input type="text" id="ap_pat" name="ap_pat" required><br><br> 
+                  <label for="Apellido Materno" >Apellido Materno</label>
+                  <input type="text" id="ap_mat" name="ap_mat"required><br><br> 
+                  <br>
+                  <legend>Calificaciones</legend><br>
+                  <label for="Apellido Materno" >Español</label>
+                  <input type="text" id="español" name="español"required><br><br>
+                   <label for="Apellido Materno" >Matematicas</label>
+                  <input type="text" id="matematicas" name="matematicas"required><br><br>
+                  <input type="submit" value="Guardar">
+                  </fieldset>
+              </form>
+
+
+
+              <br><br><br>
+              <form id="consultas">
+                  <fieldset>
+                  <legend>CONSULTA DE INFORMACION</legend>
+                  <br>
+                 <br><br>
+                  <input type="button" value="CONSULTA" onclick = "location='read.php'" style='width:170px; height:40px' align='right'>
+                  </fieldset>
+                  </center>
+              </form>
+              </body>
+              
+              </html>

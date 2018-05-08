@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Consulta</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <center>
+    <section id="content2">
+      <div class="Table">
+        <div class="Title">
+          <p>ALUMNOS</p>
+        </div>
+        <div class="Heading">
+          <div class="Cell">
+            <p>Matricula</p>
+          </div>
+          <div class="Cell">
+            <p>Nombre</p>
+          </div>
+          <div class="Cell">
+            <p>Apellido Paterno</p>
+          </div>
+          <div class="Cell">
+            <p>Apellido Materno</p>
+          </div>
+          <div class="Cell">
+            <p>Español</p>
+          </div>
+          <div class="Cell">
+            <p>Matematicas</p>
+          </div>
+        </div>
+        <?php foreach($json_data as $key1 => $value1) { ?>
+        <div class="Row">
+          <div class="Cell">
+            <p><?php print($json_data[$key1]["matricula"]); ?></p>
+          </div>
+          <div class="Cell">
+            <p><?php print($json_data[$key1]["nombre"]); ?></p>
+          </div>
+          <div class="Cell">
+            <p><?php print($json_data[$key1]["ap_pat"]); ?></p>
+          </div>
+          <div class="Cell">
+            <p><?php print($json_data[$key1]["ap_mat"]); ?></p>
+          </div>
+          <div class="Cell">
+            <p><?php print($json_data[$key1]["español"]); ?></p>
+          </div>
+          <div class="Cell">
+            <p><?php print($json_data[$key1]["matematicas"]); ?></p>
+          </div>
+        </div>
+        <?php } ?>
+      </div>
+    </section>
+  </center>
+  </body>
+</html>
